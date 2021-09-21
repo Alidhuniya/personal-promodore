@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./images/icons/apple-icon-57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="./images/icons/apple-icon-60x60.png" sizes="60x60">
+    <link rel="apple-touch-icon" href="./src/images/icons/apple-icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="./images/icons/apple-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="./images/icons/apple-icon-114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="./images/icons/apple-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="./images/icons/apple-icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="./images/icons/apple-icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="./images/icons/apple-icon-180x180.png" sizes="180x180">
+    <meta name="msapplication-TileImage" content="./images/icons/app-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#EAF0F1">
+    <meta name="theme-color" content="#F3B431">
+    <link rel="icon" href="images/lec.png">
+    <title>Promodoro app</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pomodoro Timer</h1>
+
+      <div id="pomodoro">
+        <img
+          src="./images/tomato.png"
+          style="width: 350px; height: 350px"
+        />
+        <div id="status"></div>
+        <div class="timerDisplay">25:00</div>
+        <button id="start-btn" class="btn">START</button>
+      </div>
+
+      <div class="settings">
+        <div id="work">
+          <p>Work Duration</p>
+          <button class="btn-settings" id="work-plus">+</button>
+          <div><span id="work-min">25</span> mins</div>
+          <button class="btn-settings" id="work-minus">-</button>
+        </div>
+
+        <button id="reset" class="btn">RESET</button>
+
+        <div id="break">
+          <p>Break Duration</p>
+          <button class="btn-settings" id="break-plus">+</button>
+          <div><span id="break-min">5</span> mins</div>
+          <button class="btn-settings" id="break-minus">-</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="sw.js"></script>
+  </body>
+</html>
