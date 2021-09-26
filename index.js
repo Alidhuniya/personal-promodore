@@ -102,3 +102,4 @@ function updateHTML() {
 window.setInterval(updateHTML, 100);
 
 document.onclick = updateHTML;
+

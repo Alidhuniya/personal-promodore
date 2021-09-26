@@ -20,8 +20,23 @@
     <meta name="theme-color" content="#F3B431">
     <link rel="icon" href="images/lec.png">
     <title>Promodoro app</title>
+<script>
+  
+
+if(typeof(Worker) !== "undefined") {
+  if(typeof(w) == "undefined") {
+    let w;
+    w = new Worker("index.js");
+    console.log("web work supported");
+};
+} else {
+console.log("Sorry, your browser does not support Web Workers…");
+}
+
+</script>
   </head>
   <body>
+    
     <div class="container">
       <h1>Pomodoro Timer</h1>
 
