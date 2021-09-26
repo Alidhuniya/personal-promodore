@@ -1,5 +1,5 @@
 // docs for this app: https://www.freecodecamp.org/news/how-i-built-my-pomodoro-clock-app-and-the-lessons-i-learned-along-the-way-51288983f5ee/
-
+if (typeof (document) !== "undefined") {
 let countdown = 0; // variable to set/clear intervals
 let seconds = 1500; // seconds left on the clock
 let workTime = 25;
@@ -102,4 +102,4 @@ function updateHTML() {
 window.setInterval(updateHTML, 100);
 
 document.onclick = updateHTML;
-
+}
